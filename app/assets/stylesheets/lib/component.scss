@@ -1,0 +1,186 @@
+.content-wrapper {
+  .content-header {
+    background: transparent;
+    padding: 15px 15px 0 15px;
+
+    h1 {
+      margin: 0;
+      font-size: 21px;
+      padding: 5px 0;
+    }
+
+    .actions {
+      float: right;
+      background: transparent;
+      margin-top: 0px;
+      margin-bottom: 0;
+      font-size: 12px;
+      padding: 7px 5px;
+      top: 15px;
+      right: 10px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+  }
+
+  .content-body {
+    background: transparent;
+    min-height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+  }
+
+  .content-footer {
+    background: transparent;
+    padding: 15px;
+    border-top: 1px solid #d2d6de;
+  }
+} /* .content-wrapper */
+
+.box-wrapper {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+
+  .box-header {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4;
+
+    .box-title {
+      display: inline-block;
+      font-size: 17px;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .box-tools {
+      right: 10px;
+      top: 5px;
+
+      .btn {
+        border-radius: 3px;
+        box-shadow: none;
+      }
+
+      .btn-box-tool {
+        padding: 5px;
+        font-size: 12px;
+      }
+    }
+
+    &:before,
+    &:after {
+      display: table;
+      content: " ";
+    }
+    &:after {
+      clear: both;
+    }
+  } /* .box-header */
+
+  .box-body {
+    padding: 20px 10px;
+
+    .table {
+      margin-bottom: 0;
+    }
+  } /* .box-body */
+
+  .box-footer {
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+  } /* .box-footer */
+} /* .box-wrapper */
+
+.box-wrapper.with-border {
+  border-top: 3px solid $default_color;
+  border-radius: 4px;
+}
+
+.box-wrapper.box-primary { border-top-color: $primary_color; }
+.box-wrapper.box-success { border-top-color: $success_color; }
+.box-wrapper.box-info { border-top-color: $info_color; }
+.box-wrapper.box-warning { border-top-color: $warning_color; }
+.box-wrapper.box-danger { border-top-color: $danger_color; }
+
+
+/* form styles
+-------------------------------------------------- */
+form {
+  .actions {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+div.field {
+  margin: 10px 0;
+}
+
+.labels {
+  padding-left: 0;
+}
+
+.label {
+  margin-left: 5px;
+  font-size: 90%;
+}
+
+.date-select {
+  display: inline-block;
+  width: auto;
+}
+
+.datepicker {
+  display: inline-block;
+}
+
+.input-group {
+  display: inline-table;
+  vertical-align: middle;
+}
+
+/* pagination
+-------------------------------------------------- */
+.pagination {
+  margin: 5px 0;
+}
+
+.pagination-info {
+  p {
+    margin: 20px 0;
+ }
+}
+
+.pagination-list {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* error styles
+-------------------------------------------------- */
+.field_with_errors {
+  display: inline;
+
+  input, select, textarea { background: pink; }
+}
+
+.formError { color: red; }
+
+/* other styles
+-------------------------------------------------- */
+.required { color: red; }
+
+.table-show {
+  th {
+    width: 180px;
+    background-color: #f9f9f9;
+    text-align: right;
+  }
+}

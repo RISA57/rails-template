@@ -1,0 +1,135 @@
+.wrapper {
+  .header {
+    background: $skin_color;
+
+    .navbar-brand {
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+      color: #f9f9f9;
+
+      &:hover {
+        background-color: $skin_color;
+      }
+    }
+
+    .navbar-nav {
+      >li {
+        >a {
+          padding-top: 15px;
+          padding-bottom: 13px;
+          color: #fff;
+          font-weight: bold;
+
+          .label {
+            position: absolute;
+            top: 7px;
+            right: 3px;
+            text-align: center;
+            font-size: 9px;
+            padding: 2px 3px;
+            line-height: .9;
+          }
+          .label-primary { background-color: $primary_color !important; }
+          .label-success { background-color: $success_color !important; }
+          .label-info { background-color: $info_color !important; }
+          .label-warning { background-color: $warning_color !important; }
+          .label-danger { background-color: $danger_color !important; }
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: #f6f6f6;
+            background: $hovered_skin_color;
+            border-bottom: 1px solid #003241;
+          }
+        }
+      }
+
+      .dropdown {
+        .dropdown-menu {
+          li {
+            a {
+              color: $font_color;
+              font-weight: bold;
+
+              &:hover {
+                background-color: #ccc;
+                border: none;
+              }
+            }
+          }
+        }
+      } /* .dropdown */
+    } /* .navbar-nav */
+  } /* .header */
+  .app {
+    /* Hide for mobile, show later */
+    .sidebar {
+      background: $skin_color;
+    }
+
+    @media (min-width: 768px) {
+      .sidebar {
+        width: $sidebar_width;
+        position: fixed;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+      }
+    }
+
+    .nav-sidebar {
+      margin-right: -20px;
+      margin-bottom: 20px;
+      margin-left: -20px;
+
+      >li {
+        border-top: 1px solid $skin_color;
+        border-bottom: 0px solid #444;
+
+        >a {
+          color: #eee;
+          font-weight: bold;
+          padding: 12px 5px 12px 15px;
+          display: block;
+          margin-right: 1px;
+
+          &:hover {
+            color: #f6f6f6;
+            background-color: $hovered_skin_color;
+          }
+        }
+      }
+
+      >.active {
+        a {
+          color: #f6f6f6;
+          background-color: #444;
+
+          &:hover, a:focus {
+            color: #f6f6f6;
+            background-color: #444;
+          }
+        }
+      }
+    } /* .nav-sidebar */
+
+    .main {
+      >.alert {
+        margin: 15px 15px 0 15px;
+      }
+    }
+  } /* .app */
+
+  .app.left-sidebar {
+    .main {
+      margin-left: $sidebar_width - 15px;
+    }
+  }
+} /* .wrapper */

@@ -1,0 +1,36 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: seisakuhisyo_development
+
+test:
+  <<: *default
+  database: seisakuhisyo_test
+
+production:
+  <<: *default
+  database: %DATABASE_NAME%
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
+
+sandbox:
+  <<: *default
+  database: %DATABASE_NAME%
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
+
+staging:
+  <<: *default
+  database: %DATABASE_NAME%
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock

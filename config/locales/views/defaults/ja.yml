@@ -1,0 +1,41 @@
+ja:
+  date:
+    formats:
+      ja_ymd: '%Y年%m月%d日'
+      hyphen: '%Y-%m-%d'
+  helpers:
+    link:
+      index: '一覧'
+      show: '詳細'
+      new: '新規登録'
+      edit: '編集'
+      delete: '削除'
+      add: '追加'
+      reset: 'リセット'
+      cancel: 'キャンセル'
+      close: '閉じる'
+      activate: '公開する'
+      inactivate: '非公開にする'
+      import: 'インポート'
+      export: 'エクスポート'
+      back: '戻る'
+    submit:
+      login: 'ログイン'
+      search: '検索'
+      create: '登録'
+      update: '更新'
+    placeholder:
+      email: 'メールアドレス'
+      password: 'パスワード'
+      password_confirmation: 'パスワード(確認)'
+      current_password: '現在のパスワード'
+    menu:
+      index: '一覧'
+      new: '新規登録'
+      import: 'インポート'
+      export: 'エクスポート'
+  messages:
+    created: '登録しました。'
+    updated: '更新しました。'
+    deleted: '削除しました。'
+    confirm: '本当に削除してよろしいですか？'

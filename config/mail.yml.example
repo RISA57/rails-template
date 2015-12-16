@@ -1,0 +1,32 @@
+development:
+  delivery_method: 'letter_opener_web'
+  raise_delivery_errors: true
+  default_url_options:
+    host: 'localhost:3000'
+
+test:
+  delivery_method: 'test'
+  raise_delivery_errors: true
+  default_url_options:
+    host: 'localhost:3000'
+
+production:
+  delivery_method: 'smtp'
+  raise_delivery_errors: true
+  default_url_options:
+    host: 'example.com'
+  smtp_settings:
+    :address: 'smtp.example.com'
+    :port: 587
+    :domain: 'example.com'
+    :authentication: plain
+    :user_name: 'dummy@example.com'
+    :password: 'password'
+
+staging:
+  delivery_method: 'smtp'
+  raise_delivery_errors: true
+  default_url_options:
+    host: ''
+  smtp_settings:
+    :address: 'localhost'
